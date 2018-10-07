@@ -1,10 +1,11 @@
 print("Welcome to our shop, what do you want")
 items = ["T-shirt", "Sweater"]
+
+
 print(items)
 newitem = input("Enter new item ")
 items.append(newitem)
 print(items)
-
 
 n = int(input("Update position ? "))
 while True:
@@ -24,8 +25,8 @@ while True:
     if d >2 or d <-3:
         print("Enter again")
         break
-    else:
-        print(items[n-1])
+    else:       
+        print(items[d-1])
+        items.pop(d-1)
         break
-print(items[d])
 print(items)
